@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DatosOxigenoActivity"
+    tools:showIn="@layout/activity_datos_oxigeno">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chartOxigeno"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/subtutilo_medicion"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/fechaOxigenoTextView"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/fechaOxigenoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/medicionOxigenoTextView"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="14/08/2019 12:59:00" />
+
+    <TextView
+        android:id="@+id/medicionOxigenoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="340 mg/l" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">consulta de sensores</string>
+    <string name="boton_temperatura">Temperatura</string>
+    <string name="boton_humedad">Oxígeno</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_datos_oxigeno">Mediciones de Oxígeno</string>
+    <string name="title_activity_datos_temperetura">Mediciones de Temperatura</string>
+    <string name="subtutilo_medicion">Medición Actual</string>
+</resources>
